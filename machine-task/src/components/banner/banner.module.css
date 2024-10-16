@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.contentWrapper {
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contentWrapper h3 {
+  font-size: 54px;
+}
+
+.contentWrapper p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .contentWrapper {
+    width: 90%;
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contentWrapper {
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .contentWrapper h3 {
+    font-size: 40px;
+  }
+  .contentWrapper p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contentWrapper h3 {
+    font-size: 35px;
+  }
+  .contentWrapper p {
+    font-size: 15px;
+  }
+}
