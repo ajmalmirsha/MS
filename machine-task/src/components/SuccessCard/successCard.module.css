@@ -1,0 +1,35 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.itemWrapper {
+  padding: 2rem;
+}
+
+.itemWrapper h3 {
+  font-size: 35px;
+  font-size: 600;
+}
+
+.itemWrapper h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hr {
+  width: 2px;
+  background-color: rgba(0, 42, 58, 1);
+}
+
+
+@media screen and (max-width: 800px) {
+  .container {
+   flex-direction: column;
+   /* justify-content: center; */
+   text-align: center;
+   align-items: center;
+  }
+}

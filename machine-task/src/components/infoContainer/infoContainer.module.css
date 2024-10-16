@@ -1,0 +1,120 @@
+.container {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.para {
+  width: 60%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cardContainer {
+  padding: 2rem;
+  background-color: rgba(236, 250, 255, 1);
+  border-radius: 5px;
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.active {
+  color: white;
+  background-color: rgba(0, 42, 58, 1) !important;
+}
+
+.resContainer {
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 10rem;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+}
+
+.contentWrapper h3 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.contentWrapper p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.playCardContainer {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1rem 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.playCardContainer h4 {
+  padding: 1rem;
+}
+
+.cWrapper {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+    top: 2rem;
+  }
+
+  .contentWrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cardWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .para {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cWrapper h3 {
+    font-size: 18px;
+  }
+
+  .cWrapper p {
+    font-size: 14px;
+  }
+}

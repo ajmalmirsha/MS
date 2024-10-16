@@ -1,0 +1,132 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 42, 58, 1);
+}
+
+.vacancyWrapper {
+  position: relative;
+}
+
+.vacWrapper {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem;
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+}
+
+.lWrapper {
+  width: 40%;
+}
+
+.vacWrapper button {
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.quickLinkWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+}
+
+.quickLinkWrapper h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.quickLinkWrapper h5 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.fTable {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec {
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 30rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.iconWrapper {
+  padding: 1rem;
+  background-color: rgba(35, 65, 90, 1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .fTable {
+    flex-direction: column;
+  }
+  .sec {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .vacWrapper {
+    flex-direction: column;
+    top: 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .lWrapper {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .quickLinkWrapper {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quickLinkWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .vacWrapper {
+    top: 10%;
+    gap: 1rem;
+  }
+
+  .lWrapper {
+    width: 100%;
+  }
+}

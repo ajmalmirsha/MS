@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 7rem;
+  left: 8rem;
+}
+
+.contentWrapper h3 {
+  font-size: 38px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contentWrapper h5 {
+  font-size: 25.98px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contentWrapper p {
+  font-size: 19.99px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.detailsWrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1.5;
+}
+
+.leftWrapper h2 {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 72.9px
+}
+
+.leftWrapper p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rightWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.itemWrapper {
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border-left: 2px solid rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemWrapper h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.itemWrapper p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .contentWrapper h3 {
+    font-size: 25px;
+  }
+
+  .contentWrapper h5 {
+    font-size: 18px;
+  }
+
+  .contentWrapper h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .contentWrapper {
+    bottom: 3rem;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .container {
+    padding: 1rem;
+  }
+
+
+  .contentWrapper h3 {
+    font-size: 20px;
+  }
+
+  .contentWrapper h5 , .contentWrapper p {
+    display: none;
+  }
+
+
+  .contentWrapper img {
+    width: 15px;
+  }
+  .contentWrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .detailsWrapper {
+    flex-direction: column;
+  }
+
+}
+
+/* @media screen and (max-width: 700px) {
+ 
+} */
+
+

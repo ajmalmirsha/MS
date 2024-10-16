@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.headWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftIcon,
+.rightIcon {
+  background-color: rgba(237, 237, 237, 1);
+  padding: 1rem;
+  border-radius: 50%;
+  aspect-ratio: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headWrapper h3 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.leftIcon img {
+  transform: scaleX(-50%);
+}
+
+.rightIcon img {
+    transform: scaleX(50%);
+  }
+
+.leftIcon img,
+.rightIcon img {
+  width: 20px;
+  height: 20px;
+}
+
+.iconWrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.cardWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.imgCard {
+    position: relative;
+    color: white;
+}
+
+.contentWrapper {
+    position: absolute;
+    bottom: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.readMoreBtn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  text-align: start;
+}
+
+.contentWrapper h5 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  .contentWrapper h5 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contentWrapper h5 {
+    font-size: 16px;
+  }
+
+  .contentWrapper p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .cardWrapper  {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .headWrapper h3  {
+    font-size: 24px;
+  }
+}
